@@ -1,6 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
+import Auth from "./pages/auth/index";
+import Home from "./pages/home/index";
 
 export default function App() {
   return (
@@ -8,8 +10,8 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<h1>Home</h1>} />
-            <Route path="/auth" element={<h1>Auth</h1>} />
+            <Route path="/" element={<Home />} />
+            <Route path="/auth" element={<Auth />} />
             <Route path="/rated" element={<h1>Rated</h1>} />
           </Route>
         </Routes>
