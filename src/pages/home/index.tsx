@@ -20,7 +20,7 @@ export default function Home() {
   });
 
   const { data: tvShowData, isLoading: isLoadingTvShows } = useQuery({
-    queryKey: ["tcshows"],
+    queryKey: ["tvshows"],
     queryFn: fetchTvShows,
   });
 
