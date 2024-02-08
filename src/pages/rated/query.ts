@@ -16,6 +16,16 @@ export async function fetchRatedMovies() {
 
   const res = await axios.request(options);
   return res;
+
+  // const res = await fetch(
+  //   `https://api.themoviedb.org/3/guest_session/${localStorage.getItem(
+  //     "guest_session_id"
+  //   )}/rated/movies?language=en-US&page=1&sort_by=created_at.asc&api_key=ac0e215edf9c5dcce340490ef71d4873`
+  // );
+
+  // const data = await res.json();
+
+  // return data;
 }
 
 export async function fetchRatedTvSows() {
